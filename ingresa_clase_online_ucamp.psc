@@ -17,32 +17,36 @@ Algoritmo ingresa_clase_online_ucamp
 					Leer inter
 					Si inter=='si' Entonces
 						Repetir
-							Escribir "Ya tienes los accesos?"
-							access <- ""
+							Escribir 'Ya tienes los accesos?'
+							access <- ''
 							Leer access
-							Escribir "Ponte en contacto con Exito Estudiantil"
-						Hasta Que access=="si"
+							Si access=="si" Entonces
+								Escribir "Ingresa a la plataforma TEAMS"
+							SiNo
+								Escribir 'Ponte en contacto con Exito Estudiantil'
+							FinSi
+						Hasta Que access=='si'
 						Repetir
-							Escribir "Ya es hora?"
-							hour <- ""
+							Escribir 'Ya es hora?'
+							hour <- ''
 							Leer hour
 							Escribir 'Conectate'
-						Hasta Que hour=="si"
+						Hasta Que hour=='si'
 					SiNo
 						Repetir
 							Escribir 'El problema es local?'
 							prob <- ''
 							Leer prob
 							Repetir
-								Escribir "Esta conectado el modem?"
-								conected <- ""
+								Escribir 'Esta conectado el modem?'
+								conected <- ''
 								Leer conected
-								Si conected=="si" Entonces
-									Escribir "Llama al tecnico"
+								Si conected=='si' Entonces
+									Escribir 'Llama al tecnico'
 								SiNo
-									Escribir "Conectalo"
+									Escribir 'Conectalo'
 								FinSi
-							Hasta Que conected=="si"
+							Hasta Que conected=='si'
 						Hasta Que prob=='no'
 					FinSi
 				Hasta Que start=='si'
